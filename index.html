@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+   <div class="Fresh-wrapper">
+
+        <div class="box1">
+            <h1>Feliz aniversário meu bem ˖⁺‧₊˚♡˚₊‧⁺˖!! </h1>
+
+            <span>
+                Parabéns pelo seu dia,obrigada por sempre está comigo
+                nos momentos mais difíceis e divertidos da minha vida.
+                obrigada por ser um cara incrível,te desejo tudo de bom
+                e que voce realize todos os seus sonhos,eu te amo
+            </span>
+            <h2>Passarias o resto de sua vida comigo ?</h2>
+            <img src="https://media.tenor.com/6jbVz69zx6kAAAAi/poty.gif" alt="">
+            <div class="buttons-wrapper">
+                
+                <button class="btn-move">obvio</button>
+                <button class="red">talvez</button>
+                <button>claro</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script>
+const btnMove = document.querySelector('.btn-move');
+
+btnMove.addEventListener('click', () => {
+    const maxWidth = window.innerWidth - btnMove.offsetWidth;
+    const maxHeight = window.innerHeight - btnMove.offsetHeight;
+
+    const randomX = Math.random() * maxWidth;
+    const randomY = Math.random() * maxHeight;
+
+    btnMove.style.left = `${randomX}px`;
+    btnMove.style.top = `${randomY}px`;
+});
+        
+    </script>
+</body>
+</html>
